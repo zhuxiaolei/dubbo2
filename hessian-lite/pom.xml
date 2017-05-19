@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.alibaba</groupId>
-        <artifactId>dubbo-parent</artifactId>
+        <groupId>com.uogome</groupId>
+        <artifactId>dubbo2-parent</artifactId>
         <version>1.0</version>
     </parent>
     <artifactId>hessian-lite</artifactId>

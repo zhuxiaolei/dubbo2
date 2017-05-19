@@ -16,15 +16,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<!--<parent> <groupId>com.alibaba</groupId> <artifactId>opensesame</artifactId>
-		<version>2.0</version> </parent> -->
-	<groupId>com.alibaba</groupId>
-	<artifactId>dubbo-parent</artifactId>
+	<groupId>com.uogome</groupId>
+	<artifactId>dubbo2-parent</artifactId>
 	<version>1.0</version>
 	<packaging>pom</packaging>
 	<name>${project.artifactId}</name>
-	<description>The parent project of dubbo</description>
-	<url>http://code.alibabatech.com/wiki/display/dubbo</url>
+	<description>dubbo dubbox eXtensions</description>
+	<url>https://github.com/zhuxiaolei/dubbo2</url>
 	<inceptionYear>2011</inceptionYear>
 	<licenses>
 		<license>
@@ -39,21 +37,21 @@
 		<url>http://www.alibaba.com</url>
 	</organization>
 	<modules>
-		<module>dubbo-common</module>
-		<module>dubbo-container</module>
-		<module>dubbo-remoting</module>
-		<module>dubbo-rpc</module>
-		<module>dubbo-filter</module>
-		<module>dubbo-cluster</module>
-		<module>dubbo-registry</module>
-		<module>dubbo-monitor</module>
-		<module>dubbo-config</module>
-		<module>dubbo</module>
-		<module>dubbo-simple</module>
-		<module>dubbo-admin</module>
-		<module>dubbo-demo</module>
+		<module>dubbo2-common</module>
+		<module>dubbo2-container</module>
+		<module>dubbo2-remoting</module>
+		<module>dubbo2-rpc</module>
+		<module>dubbo2-filter</module>
+		<module>dubbo2-cluster</module>
+		<module>dubbo2-registry</module>
+		<module>dubbo2-monitor</module>
+		<module>dubbo2-config</module>
+		<module>dubbo2</module>
+		<module>dubbo2-simple</module>
+		<module>dubbo2-admin</module>
+		<module>dubbo2-demo</module>
 		<module>hessian-lite</module>
-        <!--<module>dubbo-tool/dubbo-demo-lite-archetype</module>-->
+        <!--<module>dubbo-tool/dubbo2-demo-lite-archetype</module>-->
 	</modules>
 	<profiles>
 		<profile>
@@ -64,7 +62,7 @@
 				</file>
 			</activation>
 			<modules>
-				<module>dubbo-test</module>
+				<module>dubbo2-test</module>
 			</modules>
 		</profile>
 		<profile>
@@ -195,7 +193,7 @@
 				<version>${httpclient_version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.alibaba</groupId>
+				<groupId>com.uogome</groupId>
 				<artifactId>hessian-lite</artifactId>
 				<version>${hessian_lite_version}</version>
 			</dependency>
