@@ -168,3 +168,10 @@ Log4j:
     * http://www.apache.org/licenses/LICENSE-2.0 (Apache License 2.0)
   * HOMEPAGE:
     * http://log4j.apache.org
+    
+Log4j2:
+
+  * LICENSE:
+    * http://www.apache.org/licenses/LICENSE-2.0 (Apache License 2.0)
+  * HOMEPAGE:
+    * http://logging.apache.org/log4j/2.x/

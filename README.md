@@ -2,9 +2,18 @@ Dubbo2 now means Dubbo,Dubbox eXtensions. If you know java, javax, log4j and dub
 
 Dubbo2 adds log4j2 [dubbo service framework](http://github.com/alibaba/dubbo). It's been used by several projects of [zhuxiaolei.github.io](http://zhuxiaolei.github.io), which is one of the major e-commerce companies in China.
 
-## 主要贡献者
+## dubbo主要贡献者
+* dubbo 团队
 
-* 朱肖磊 [易鑫](http://www.daikuan.com/) zhuxiaolei@yixincapital.com
+## dubbox主要贡献者
+* 沈理 [当当网](http://www.dangdang.com/) shenli@dangdang.com
+* 王宇轩 [当当网](http://www.dangdang.com/) wangyuxuan@dangdang.com
+* 马金凯 [韩都衣舍](http://www.handu.com/) majinkai@handu.com
+* Dylan 独立开发者 dinguangx@163.com
+* Kangfoo 独立开发者
+
+## dubbo2主要贡献者
+* 朱肖磊 [易鑫](http://www.daikuan.com/) zhu_xiaolei_Ok@163.com
 
 有技术问题请移步此处讨论 https://github.com/zhuxiaolei/dubbo2/issues
 
