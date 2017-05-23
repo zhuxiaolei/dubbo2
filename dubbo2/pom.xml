@@ -24,7 +24,7 @@
     <artifactId>dubbo2</artifactId>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-    <description>The all in one project of dubbo</description>
+    <description>The all in one project of dubbo2</description>
     <properties>
         <skip_maven_deploy>false</skip_maven_deploy>
     </properties>
@@ -323,6 +323,10 @@
         <plugins>
             <plugin>
                 <artifactId>maven-source-plugin</artifactId>
+                <version>2.4</version>  
+                <configuration>  
+                    <attach>true</attach>  
+                </configuration>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -335,6 +339,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.4</version>  
                 <executions>
                     <execution>
                         <id>attach-javadoc</id>
@@ -345,15 +350,17 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <show>public</show>
-                    <charset>UTF-8</charset>
-                    <encoding>UTF-8</encoding>
-                    <docencoding>UTF-8</docencoding>
-                    <excludePackageNames>com.uogome.com.*</excludePackageNames>
-                    <links>
-                        <link>http://docs.oracle.com/javase/6/docs/api</link>
-                    </links>
-                </configuration>
+					<show>public</show>
+					<charset>UTF-8</charset>
+					<encoding>UTF-8</encoding>
+					<docencoding>UTF-8</docencoding>
+					<excludePackageNames>com.alibaba.com.*</excludePackageNames>
+					<links>
+						<link>http://docs.oracle.com/javase/6/docs/api</link>
+					</links>
+					<aggregate>true</aggregate>
+					<destDir>D:\github\dubbo2\dubbo2\dubbo2\target</destDir>
+				</configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

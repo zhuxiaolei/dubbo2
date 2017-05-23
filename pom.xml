@@ -491,6 +491,55 @@
 					</archive>
 				</configuration>
 			</plugin>
+			<!-- Javadoc -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>  
+                			<additionalparam>-Xdoclint:none</additionalparam>  
+            			</configuration>
+                    </execution>
+                </executions>
+                <configuration>
+					<show>public</show>
+					<charset>UTF-8</charset>
+					<encoding>UTF-8</encoding>
+					<docencoding>UTF-8</docencoding>
+					<!--<excludePackageNames>com.alibaba.com.*</excludePackageNames>-->
+					<links>
+						<link>http://docs.oracle.com/javase/6/docs/api</link>
+					</links>
+				</configuration>
+            </plugin>
+            <!-- GPG -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.5</version>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
 			<plugin>
 				<artifactId>maven-source-plugin</artifactId>
 				<executions>
@@ -661,8 +710,9 @@
 		<url>http://code.alibabatech.com/jira/browse/DUBBO</url>
 	</issueManagement>
 	<scm>
-		<url>http://code.alibabatech.com/svn/dubbo/trunk</url>
-		<connection>scm:svn:http://code.alibabatech.com/svn/dubbo/trunk</connection>
+		<url>git@github.com:zhuxiaolei/dubbo2.git</url>
+		<connection>scm:git:git@github.com:zhuxiaolei/dubbo2.git</connection>
+		<developerConnection>scm:git:git@github.com:zhuxiaolei/dubbo2.git</developerConnection>
 	</scm>
 	<mailingLists>
 		<mailingList>
@@ -673,6 +723,16 @@
 			<archive>http://groups.google.com/group/dubbo</archive>
 		</mailingList>
 	</mailingLists>
+	<distributionManagement>
+        <snapshotRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>sonatype-nexus-staging</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 	<developers>
 		<developer>
 			<name>QianXiao(Shawn)</name>
